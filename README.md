@@ -2,7 +2,7 @@
 
 Repo to keep track of all dotfiles
 
-To check the programs and apps I use read [SOFTWARE](SOFTWARE.md)
+To check the programs and apps I use read [SOFTWARE](software/SOFTWARE.md)
 
 ## Install requirements
 
