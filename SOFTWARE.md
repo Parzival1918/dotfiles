@@ -2,6 +2,11 @@
 
 All programs and tools that I use regularly.
 
+## Shells
+
+- **fish**
+- **nushell**
+
 ## Text editors
 
 - **helix**, terminal editor written in rust
