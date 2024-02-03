@@ -9,7 +9,7 @@ function install {
 
   if [ $? -ne 0 ]; then
     echo "Installing: ${1}..."
-    cargo install $1
+    cargo install --locked $1
   else
     echo "Already installed: ${1}"
   fi
@@ -24,10 +24,22 @@ install gitui
 
 # dev tools
 install mdbook
+install bacon
+install mise
 
 # music
 install termusic
+install ncspot
 
 # file managers
 install yazi-fm
 install zoxide
+
+# extra
+install bat
+install exa
+install du-dust
+install mprocs
+install ripgrep
+install speedtest-rs
+install wiki-tui
