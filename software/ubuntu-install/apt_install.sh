@@ -28,3 +28,6 @@ install i3 i3
 install polybar polybar
 install rofi rofi
 install picom picom
+
+# extra
+install stow stow
