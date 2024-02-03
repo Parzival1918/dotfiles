@@ -31,3 +31,9 @@ install picom picom
 
 # extra
 install stow stow
+install libxcb-randr0-dev libxcb-randr0-dev 
+install libxcb-xtest0-dev libxcb-xtest0-dev 
+install libxcb-xinerama0-dev libxcb-xinerama0-dev 
+install libxcb-shape0-dev libxcb-shape0-dev 
+install libxcb-xkb-dev libxcb-xkb-dev 
+install libxcb-xfixes0-dev libxcb-xfixes0-dev 
