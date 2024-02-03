@@ -17,6 +17,7 @@ function install {
 
 # shells
 install nu
+install starship
 
 # git tools
 install gitui
