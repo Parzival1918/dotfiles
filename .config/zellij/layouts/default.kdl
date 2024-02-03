@@ -1,0 +1,39 @@
+layout {
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+    tab_template name="arttime_tab" split_direction="horizontal" {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+    }
+    arttime_tab name="general" {
+        pane split_direction="vertical" {
+            pane size="67%" focus=true split_direction="horizontal" {
+                children
+            }
+            pane size="33%" split_direction="horizontal" {
+                pane size="94%"
+                pane size="6%" borderless=true command="cava" 
+            }
+        }
+    }
+}
+
+keybinds {
+    tab {
+        bind "Ctrl r" {
+           NewTab {
+               name "rust dev"
+               layout "rust_dev"
+           }
+        }
+    }
+}

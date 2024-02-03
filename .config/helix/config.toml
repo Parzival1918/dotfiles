@@ -1,0 +1,29 @@
+theme = "sonokai_mod"
+
+[editor]
+idle-timeout = 50
+#true-color = true
+
+[editor.statusline]
+left = ["mode", "file-modification-indicator", "spinner"]
+center = ["file-name", "read-only-indicator", "version-control"]
+right = ["diagnostics", "selections", "register", "position", "file-encoding", "file-type"]
+separator = "|"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+enable = true
+display-inlay-hints = true
+display-messages = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 25 # increase value to reduce forced mid-word wrapping
+max-indent-retain = 0

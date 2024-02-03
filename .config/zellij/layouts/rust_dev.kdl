@@ -1,0 +1,30 @@
+layout {
+    pane size=1 borderless=true {
+        plugin location="zellij:tab-bar"
+    }
+    pane split_direction="vertical" {
+        pane command="exa" name="FILE TREE" borderless=true size="10%" {
+            args "-FTL" "2" "-a" "--git" "--git-ignore" "--group-directories-first"
+        }
+        pane size="90%" {
+            pane split_direction="vertical" size="72%" {
+//                pane edit="src/main.rs" 
+                pane command="hx" name="MAIN" {
+                    args "src/main.rs"
+                }
+                pane focus=true
+            }
+            pane split_direction="vertical" size="28%" {
+                pane command="cargo" name="RUN" start_suspended=true {
+                    args "run"
+                }
+	        	pane command="cargo" name="CHECK" {
+		        	args "check"
+		        }
+                pane command="cargo" name="TEST" {
+                    args "test"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+on_force_close "quit"
+
+//layout_dir "/Users/parzival1918/.config/zellij/layouts"
+layout_dir "/home/unstraycato/.config/zellij/layouts"
+default_layout "default"
+
+//themes_dir "/Users/parzival1918/.config/zellij/themes"
+themes_dir "/home/unstraycato/.config/zellij/themes"
+theme "dracula"
+
+default_shell "fish"
