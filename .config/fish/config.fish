@@ -26,3 +26,4 @@ set -x VISUAL hx
 
 #keychain --agents ssh --eval id_ed25519 -q --noask | source
 keychain --eval id_ed25519 --noask -q | source
+mise activate fish | source
