@@ -236,7 +236,7 @@ gaps outer 1
 exec_always picom --config ~/.config/picom/picom.conf
 
 # Start with an open terminal
-exec --no-startup-id kitty -e "zellij"
+exec --no-startup-id kitty
 
 exec_always --no-startup-id zellij delete-all-sessions
 
