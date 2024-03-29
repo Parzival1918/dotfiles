@@ -8,4 +8,26 @@ config:
   link_on_import: nolink
   longkey: false
 dotfiles:
+  f_marimo:
+    dst: ~/.marimo.toml
+    src: marimo.toml
+  f_travis:
+    dst: ~/.travis.conf
+    src: travis.conf
+  f_starship:
+    dst: ~/.config/starship.toml
+    src: starship.toml
+  d_helix:
+    dst: ~/.config/helix
+    src: helix  
+  d_mise:
+    dst: ~/.config/mise
+    src: mise
+  d_fish:
+    dst: ~/.config/fish
+    src: fish
 profiles:
+  mbair:
+    import:
+    - prof-imports/tools.yaml
+    - prof-imports/editors.yaml
