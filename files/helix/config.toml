@@ -1,3 +1,5 @@
+# {{@@ header() @@}}
+
 theme = "sonokai_mod"
 
 [editor]

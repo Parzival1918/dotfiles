@@ -1,6 +1,6 @@
 #!/bin/sh
 
-{{@@ header('# ') @@}}
+# {{@@ header() @@}}
 
 # ONLY WORKS WITH i3lock-color, which I do not have installed
 

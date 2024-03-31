@@ -41,6 +41,9 @@ dotfiles:
   d_rofi:
     dst: ~/.config/rofi
     src: rofi
+  d_kitty:
+    dst: ~/.config/kitty
+    src: kitty
 profiles:
   mbair:
     variables:
@@ -52,6 +55,7 @@ profiles:
       - d_helix
       - d_mise
       - d_fish
+      - d_kitty
   nipogi:
     variables:
       devicename: "nipogi"      
@@ -62,6 +66,7 @@ profiles:
       - d_helix
       - d_mise
       - d_fish
+      - d_kitty
       - d_i3
       - d_polybar
       - d_rofi

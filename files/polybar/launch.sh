@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-{{@@ header('# ') @@}}
+# {{@@ header() @@}}
 
 # Terminate already running bar instances
 # If all your bars have ipc enabled, you can use 

@@ -1,4 +1,5 @@
 /*  {{@@ header() @@}}*/
+
 configuration {
 	modi: "window,drun,filebrowser,combi,run";
 	combi-modes: [window,drun,run];

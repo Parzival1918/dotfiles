@@ -1,4 +1,4 @@
-{{@@ header('# ') @@}}
+# {{@@ header() @@}}
 
 [character]
 success_symbol = "[>](bold green)"
