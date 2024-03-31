@@ -44,6 +44,9 @@ dotfiles:
   d_kitty:
     dst: ~/.config/kitty
     src: kitty
+  f_git:
+    dst: ~/.gitconfig
+    src: gitconfig
 profiles:
   mbair:
     variables:
@@ -56,6 +59,7 @@ profiles:
       - d_mise
       - d_fish
       - d_kitty
+      - f_git
   nipogi:
     variables:
       devicename: "nipogi"      
@@ -67,6 +71,7 @@ profiles:
       - d_mise
       - d_fish
       - d_kitty
+      - f_git
       - d_i3
       - d_polybar
       - d_rofi
