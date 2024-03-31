@@ -1,4 +1,6 @@
 config:
+  import_variables:
+  - variables/dynamic.yaml
   backup: true
   banner: true
   create: true
@@ -11,21 +13,36 @@ dotfiles:
   f_marimo:
     dst: ~/.marimo.toml
     src: marimo.toml
+    template: true
   f_travis:
     dst: ~/.travis.conf
     src: travis.conf
   f_starship:
     dst: ~/.config/starship.toml
     src: starship.toml
+    template: true
   d_helix:
     dst: ~/.config/helix
     src: helix  
+    cmpignore: 
+      - 'runtime'
   d_mise:
     dst: ~/.config/mise
     src: mise
   d_fish:
     dst: ~/.config/fish
     src: fish
+  d_i3:
+    dst: ~/.config/i3
+    src: i3
+    template: true
+  d_polybar:
+    dst: ~/.config/polybar
+    src: polybar
+    template: true
+  d_rofi:
+    dst: ~/.config/rofi
+    src: rofi
 profiles:
   mbair:
     import:

@@ -1,3 +1,5 @@
+{{@@ header('# ') @@}}
+
 [completion]
 activate_on_typing = true
 copilot = true

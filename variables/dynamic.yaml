@@ -1,0 +1,2 @@
+dynvariables:
+  homedir: "echo $HOME"
