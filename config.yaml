@@ -1,8 +1,8 @@
 config:
   import_variables:
-    - variables/dynamic.yaml
-    - variables/general.yaml
-    - variables/colours.yaml
+  - variables/dynamic.yaml
+  - variables/general.yaml
+  - variables/colours.yaml
   backup: true
   banner: true
   create: true
@@ -23,9 +23,9 @@ dotfiles:
     src: starship.toml
   d_helix:
     dst: ~/.config/helix
-    src: helix  
-    cmpignore: 
-      - 'runtime'
+    src: helix
+    cmpignore:
+    - runtime
   d_mise:
     dst: ~/.config/mise
     src: mise
@@ -47,31 +47,37 @@ dotfiles:
   f_git:
     dst: ~/.gitconfig
     src: gitconfig
+  d_gh:
+    dst: ~/.config/gh
+    src: gh
+    cmpignore:
+      - hosts.yml
 profiles:
   mbair:
     variables:
-      devicename: "mbair"      
+      devicename: mbair
     dotfiles:
-      - f_marimo
-      - f_travis
-      - f_starship
-      - d_helix
-      - d_mise
-      - d_fish
-      - d_kitty
-      - f_git
+    - f_marimo
+    - f_travis
+    - f_starship
+    - d_helix
+    - d_mise
+    - d_fish
+    - d_kitty
+    - f_git
   nipogi:
     variables:
-      devicename: "nipogi"      
+      devicename: nipogi
     dotfiles:
-      - f_marimo
-      - f_travis
-      - f_starship
-      - d_helix
-      - d_mise
-      - d_fish
-      - d_kitty
-      - f_git
-      - d_i3
-      - d_polybar
-      - d_rofi
+    - f_marimo
+    - f_travis
+    - f_starship
+    - d_helix
+    - d_mise
+    - d_fish
+    - d_kitty
+    - f_git
+    - d_i3
+    - d_polybar
+    - d_rofi
+    - d_gh
