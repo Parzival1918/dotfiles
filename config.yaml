@@ -51,10 +51,13 @@ dotfiles:
     dst: ~/.config/gh
     src: gh
     cmpignore:
-      - hosts.yml
+    - hosts.yml
   d_picom:
     dst: ~/.config/picom
     src: picom
+  d_nvim:
+    dst: ~/.config/nvim
+    src: nvim
 profiles:
   macos:
     variables:
@@ -68,6 +71,7 @@ profiles:
     - d_fish
     - d_kitty
     - f_git
+    - d_nvim
   ubuntu:
     variables:
       devicename: ubuntu
@@ -85,3 +89,4 @@ profiles:
     - d_rofi
     - d_gh
     - d_picom
+    - d_nvim
