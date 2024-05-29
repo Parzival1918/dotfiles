@@ -52,10 +52,13 @@ dotfiles:
     src: gh
     cmpignore:
       - hosts.yml
+  d_picom:
+    dst: ~/.config/picom
+    src: picom
 profiles:
-  mbair:
+  macos:
     variables:
-      devicename: mbair
+      devicename: macos
     dotfiles:
     - f_marimo
     - f_travis
@@ -65,9 +68,9 @@ profiles:
     - d_fish
     - d_kitty
     - f_git
-  nipogi:
+  ubuntu:
     variables:
-      devicename: nipogi
+      devicename: ubuntu
     dotfiles:
     - f_marimo
     - f_travis
@@ -81,3 +84,4 @@ profiles:
     - d_polybar
     - d_rofi
     - d_gh
+    - d_picom
