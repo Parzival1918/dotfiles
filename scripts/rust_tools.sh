@@ -3,7 +3,7 @@
 ## SCRIPT INPUTS ##
 
 # BINARY_NAME/CRATE_NAME
-To_Install=('hx/hx' 'bat/bat' 'mise/mise' 'starship/starship' 'nu/nu' 'typst/typst-cli' 'exa/exa' 'z/zoxide' 'gitui/gitui' 'mdbook/mdbook' 'eza/eza' 'sd/sd' 'pastel/pastel' 'ouch/ouch' 'kalker/kalker' 'presenterm/presenterm' 'crabz/crabz' 'rg/ripgrep')
+To_Install=('bob/bob-nvim' 'hx/hx' 'bat/bat' 'mise/mise' 'starship/starship' 'nu/nu' 'typst/typst-cli' 'exa/exa' 'z/zoxide' 'gitui/gitui' 'mdbook/mdbook' 'eza/eza' 'sd/sd' 'pastel/pastel' 'ouch/ouch' 'kalker/kalker' 'presenterm/presenterm' 'crabz/crabz' 'rg/ripgrep')
 
 ###################
 
