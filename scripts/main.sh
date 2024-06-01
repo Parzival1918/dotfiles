@@ -87,6 +87,11 @@ if [[ "${distro}" == "Ubuntu" ]]; then
   if ! check_exists "feh"; then
     sudo apt install feh
   fi
+
+  # fortune startup app
+  if ! check_exists "fortune"; then
+    sudo apt install fortune-mod
+  fi
 elif [[ "${distro}" == "Arch" ]]; then
   echo "Detected Arch"
 
@@ -141,6 +146,11 @@ elif [[ "${distro}" == "Arch" ]]; then
   # feh, wallpapers
   if ! check_exists "feh"; then
     pacman -S feh
+  fi
+
+  # fortune startup app
+  if ! check_exists "fortune"; then
+    pacman -S fortune-mod
   fi
 else
   echo "Unsupported OS: ${distro}"
